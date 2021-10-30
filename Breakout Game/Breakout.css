@@ -1,0 +1,69 @@
+*{
+    font-family: "Germania One";
+}
+.btn {
+    box-shadow: none !important;
+    outline: none !important;
+    border-width:3px;
+}
+#btnS:hover{
+    color:#228064;
+    background-color: transparent;
+}
+#main{
+    background-image: url("img/bg.jpg") !important;
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#helpBox{
+    background-image: url("img/bg1.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+#breakout{
+    display: none;
+}
+#sound{
+    width: 30px;
+    height : 30px;
+    cursor: pointer;
+    position: absolute;
+    top : 465px;
+    left : 15px;
+}
+#gameover{
+    position: absolute;
+    width : 400px;
+    height: 500px;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+#youwon{
+    width: 100px;
+    position: absolute;
+    top : 200px;
+    left : 150px;
+    display: none;
+}
+#youlose{
+    width:400px;
+    position: absolute;
+    top: 100px;
+    left : 0px;
+    display: none;
+}
+#restart{
+    position: absolute;
+    top: 310px;
+    left : 155px;
+    cursor: pointer;
+    font-size: 1.25em;
+    color : #FFF;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="Breakout.css">
+    <script src="Breakout.js"></script>
+    <script src="extra.js"></script>
+
+    <title>BREAKOUT GAME</title>
+</head>
+<body>    
+    <div class="text-center col-3" id="main">
+       <div class="pt-5">
+            <h1 class="pt-5" id="text">
+                BREAKOUT 
+            </h1>
+            <div class="mt-5">
+                <button  class="btn btn-success px-5 py-2" id="btnS" onclick="starGame()">
+                   Start
+                </button>
+             </div>
+             <div class="mt-5">
+                <button type="button" class="btn btn-outline-success px-5 py-2" id="btnH" onclick="HelpAndBack()">
+                     Help
+                 </button>
+             </div>
+       </div>
+    </div>
+    <div id="helpBox" class="text-center col-3">
+      <div class="pt-5">
+        <h1 id="htp" class="pt-3 text-white"> How to play: </h1>
+        <p class="mx-auto pt-3" id="message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae sint natus tempore, porro ad sapiente veritatis aperiam 
+            rerum iusto nisi. Nesciunt inventore iste placeat in ipsum ex modi architecto Lorem, ipsum dolor sit amet consectetur adipisicing 
+            elit. Ratione iure consequuntur, enim excepturi, alias nobis culpa labore, ab aspernatur velit fugit eaque? Sit debitis, excepturi 
+            veniam dolorum consequuntur accusantium! Minus. <quis class="lore"></quis></p>
+        <button class="btn btn-danger mt-3 px-5 py-2" id="Backbtn" onclick="HelpAndBack()">
+            Back
+        </button>
+      </div>
+    </div>
+
+    <div class="sound">
+        <img src="img/SOUND_ON.png" alt="" id="sound">
+    </div>
+    
+    <div id="gameover">
+        <img src="img/youwon.png" alt="" id="youwon">
+        <img src="img/gameover.png" alt="" id="youlose">
+        <div id="restart">Play Again!</div>
+    </div>
+   
+    <canvas id="breakout" width="400" height="500"></canvas>
+</body>
+</html>
